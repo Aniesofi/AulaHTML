@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let valorConta = parseFloat(prompt("coloque o valor da conta"));
+        let numeroClientes = parseInt(prompt("coloque o numero de clientes"));
+
+        if (isNaN(valorConta) || isNaN(numeroClientes ||
+            numeroClientes <= 0 || valorConta <= 0)) {
+            alert("digite um valor valido.");
+        }
+
+
+
+        let valorindividual = valorConta / numeroClientes;
+
+        alert("O valor que cada um deve pagar é " + valorindividual.toFixed(2));
+    </script>
+
+</body>
+
+</html>
