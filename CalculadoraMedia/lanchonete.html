@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let menu = parseInt(prompt("*_menu* \n digite o número do seu pedido \n 100: cachorro quente - R$ 1.70\n  101: bauru simples -  R$ 2.30 \n 102: bauru com ovo - R$ 2.60 \n 103: hamburguer - R$ 2.40 \n 104: cheeseburger - R$ 2.50 \n 105: refrigerante - R$ 1.00 " ));
+        let quantidade = parseInt(prompt("qual a quantidade desejada."));
+        let precoUnitario;
+        let precoTotal;
+
+        switch(menu){
+            case 100:
+                precoUnitario = 1.70;
+                precoTotal = precoUnitario*quantidade;
+                alert("você comprou "+quantidade+" cachorros quentes, pagando o valor de R$ "+precoTotal);
+                break;
+
+                case 101:
+                    precoUnitario = 2.30;
+                    precoTotal = precoUnitario*quantidade;
+                    alert("você comprou "+quantidade+" bauru simples, pagando o valor de R$ "+precoTotal);
+                    break;
+                    
+                case 102:
+                    precoUnitario = 2.60;
+                    precoTotal = precoUnitario*quantidade;
+                    alert("você comprou "+quantidade+" bauru com ovo, pagando o valor de R$ "+precoTotal);
+                    break;
+                case 103:
+                    precoUnitario = 2.40;
+                    precoTotal = precoUnitario*quantidade;
+                    alert("você comprou "+quantidade+" hamburguer, pagando o valor de R$ "+precoTotal);
+                    break
+                    
+                case 104:
+                    precoUnitario = 2.50;
+                    precoTotal = precoUnitario*quantidade;
+                    alert("você comprou "+quantidade+" cheeseburguer, pagando o valor de R$ "+precoTotal);
+                    break;
+                case 105:
+                    precoUnitario = 1.00;
+                    precoTotal = precoUnitario*quantidade;
+                    alert("você comprou "+quantidade+" refrigerante, pagando o valor de R$ "+precoTotal);
+                    break;
+                    default:
+                        alert(("não temos essa opção em nosso cardápio."));
+                        break;
+        }
+        alert("Obrigado pela preferência!!!")
+    </script>
+    
+</body>
+</html>
