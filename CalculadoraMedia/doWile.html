@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do {
+            let proximo = 0;
+            let anterior = 0;
+            let atual = 1;
+            let limite = 0;
+            limite = parseInt(prompt("até qual número deseja gerar a sequência Fibonnacci"));
+            alert (atual);
+            for (i = 1; i < limite; i++){
+                proximo = (anterior + atual);
+                alert(proximo);
+                anterior = atual; 
+                atual = proximo;
+            }
+            resp = prompt("digite s para gerar outra Fibonnacci");
+          }  while (resp == "s");
+            
+        
+    </script>
+    
+</body>
+</html>
